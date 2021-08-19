@@ -20,6 +20,6 @@ let routes = require('./app/routes/route');
 //use all routes
 app.use('/', routes);
 
-app.listen(3030, function(){
+app.listen(process.env.PORT, '0.0.0.0', function(){
     console.log('Server listening the port 3030');
 });
